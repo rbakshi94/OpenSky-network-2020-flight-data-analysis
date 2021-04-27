@@ -44,7 +44,7 @@ def getDistance(lat1,lon1,lat2,lon2): #gets distance in km given a pair of latit
     return R * c #distance
 
 #uncomment if re-creating light dataframe from original data file
- 
+''' 
 df=pd.read_csv("flightlist_20200401_20200430.csv")
 print(df.head)
        
@@ -57,10 +57,10 @@ df.fillna(0,inplace=True)
 
 liteDF=df.iloc[::80, :] # dataframe where only every 80th entry exists from original df (original csv is roughly 160mb in size)
 liteDF.to_csv("liteData.csv")
-
+'''
 #comment if re-creating light dataframe from original data file
-#liteDF=pd.read_csv("liteData.csv") 
-#liteDF = liteDF.drop(liteDF.columns[[0]], axis=1)
+liteDF=pd.read_csv("liteData.csv") 
+liteDF = liteDF.drop(liteDF.columns[[0]], axis=1)
 
 
 
