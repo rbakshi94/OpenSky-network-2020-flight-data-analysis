@@ -125,6 +125,9 @@ for k in K:
 plt.figure(4)
 plt.title("No. of clusters vs. WSS")
 plt.plot(K,wss) 
+plt.xlabel("No. of clusters (k)")
+plt.ylabel("Within-Cluster Sum of Square Error (WSS) ")
+plt.savefig("KMeansElbowMethodPlot.png",dpi=80) #To be loaded as floating image in map view
 #Determined 5 clusters from elbow method plot
 
 #Running KMeans clustering with 5 clusters
