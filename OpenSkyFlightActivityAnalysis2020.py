@@ -301,7 +301,7 @@ labels.append(("Group 5:"+" "+cluster5Aircraft[0]+", "+cluster5Aircraft[1]+", "+
 colors=[(255, 51, 236),(51, 73, 255),(255, 51, 51),(255, 116, 51),(131, 51, 255)] #Color field for each cluster in the legend. Colors match cluster colors previously defined.
 interactiveWorldMap.add_legend(title="Common aircraft per group (By Typecode. Ex: B748=B747-8):",labels=labels, position ='bottomleft',colors=colors)
 
-interactiveWorldMap.save("interactiveMap.html") 
+interactiveWorldMap.save("index.html") #Contains interactive map
 
 
 
